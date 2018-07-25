@@ -15,6 +15,6 @@ public class HelloControler {
 
     @GetMapping("/hi")
     public String hi(@RequestParam String name) {
-        return helloService.hiService(name);
+        return helloService.hiService(name) + " -- from service ribbon";
     }
 }
