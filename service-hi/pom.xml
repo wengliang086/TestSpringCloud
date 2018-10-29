@@ -27,5 +27,9 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.my.test</groupId>
+            <artifactId>common-model</artifactId>
+        </dependency>
     </dependencies>
 </project>
