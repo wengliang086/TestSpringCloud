@@ -4,9 +4,9 @@ eureka:
       defaultZone: http://admin:111111@localhost:8761/eureka/
 server:
   port: 8769
-spring:
-  application:
-    name: service-zuul
+#spring:
+#  application:
+#    name: service-zuul
 zuul:
   routes:
     api-a:

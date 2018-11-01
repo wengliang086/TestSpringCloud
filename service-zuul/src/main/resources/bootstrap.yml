@@ -1,0 +1,13 @@
+# 启动之前就要使用的参数，为了要更早的加载，所以要配置到 bootstrap.myl 文件中
+spring:
+  application:
+    name: service-zuul
+  cloud:
+    config:
+      uri: http://localhost:8888
+      profile: dev
+      label: config-test
+
+# config server 地址
+# application name + profile版本
+# 分支

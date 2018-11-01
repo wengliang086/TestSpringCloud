@@ -13,6 +13,13 @@
     1. 在spring Cloud为F版本的时候，已经不需要自己构建Zipkin Server了，只需要下载jar运行即可
     2. spring-cloud-starter-zipkin已经关联了Sleuth
 2. Feign 已经关联了Ribbon
+3. Config 
+    1. Config Server 路径访问规则 “/项目名称/版本（dev、pro、test）/分支名称”
+        #### 该测试项目访问示例
+        * 主干访问： http://localhost:8888/service-zuul/dev
+        * 分支访问： http://localhost:8888/service-zuul/dev/config-test
+        * 另一项目： http://localhost:8888/config-client/dev/config-test
+    2. sevice-zuul 从 Config Server 获取参数，获取配置配置到 bootstrap.yml 文件，加载更早
 
 
 ### 参考博客地址

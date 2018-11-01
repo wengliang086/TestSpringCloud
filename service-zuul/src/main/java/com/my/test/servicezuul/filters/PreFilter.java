@@ -4,6 +4,7 @@ import com.google.common.base.Strings;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 
 @Component
 public class PreFilter extends ZuulFilter {
+
+    @Value("${token}")
+    private boolean checkToken;
+
     @Override
     public String filterType() {
         return FilterConstants.PRE_TYPE;
@@ -33,6 +38,8 @@ public class PreFilter extends ZuulFilter {
 
         String key = request.getParameter("key");
         System.out.println(key);
+
+        System.out.println("checkToken=" + checkToken);
 
         String token = request.getHeader("token");
         if (Strings.isNullOrEmpty(token)) {
