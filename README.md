@@ -21,6 +21,7 @@
         * 另一项目： http://localhost:8888/config-client/dev/config-test
     2. sevice-zuul 从 Config Server 获取参数，获取配置配置到 bootstrap.yml 文件，加载更早
 
+        - 可以通过 spring-boot-starter-actuator 开启手动刷新，2.0.3版本需要先暴露 refresh 端点，再通过POST 调用/actuator/refresh 来更新配置
 
 ### 参考博客地址
 https://blog.csdn.net/forezp/article/details/70148833/
