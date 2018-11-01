@@ -15,6 +15,7 @@
 2. Feign 已经关联了Ribbon
 3. Config 
     1. Config Server 路径访问规则 “/项目名称/版本（dev、pro、test）/分支名称”
+        - 配置内容如果要加密的话，需要用的 JCE
         #### 该测试项目访问示例
         * 主干访问： http://localhost:8888/service-zuul/dev
         * 分支访问： http://localhost:8888/service-zuul/dev/config-test
