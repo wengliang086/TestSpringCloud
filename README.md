@@ -26,3 +26,12 @@
 
 ### 参考博客地址
 https://blog.csdn.net/forezp/article/details/70148833/
+
+#### 缺少部分
++ 全局锁
++ 分布式会话
++ 管理系统
++ Auth 服务
++ ELK 日志分析
++ Docker
++ Bus

@@ -24,6 +24,7 @@
         <module>service-feign</module>
         <module>service-ribbon</module>
         <module>service-zuul</module>
+        <module>service-oauth2</module>
     </modules>
 
     <properties>
