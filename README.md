@@ -42,3 +42,7 @@ https://blog.csdn.net/forezp/article/details/70148833/
 2. 配置 /etc/hosts，加 10.1.1.236 eureka-server。
 3. eureka-server 去掉hostname配置，增加 prefer-ip-address: true 配置，去掉 service-url 配置
 4. service-hi 项目，修改 defaultZone 中的 localhost 为 eureka-server 
+
+### docker compose
+
+1. 启动顺序没有解决

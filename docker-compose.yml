@@ -1,0 +1,15 @@
+version: '3'
+services:
+  eureka-server:
+    image: lyx/eureka-server
+    restart: always
+    ports:
+    - 8761:8761
+
+  service-hi:
+    image: lyx/service-hi
+    restart: always
+    depends_on:
+    - eureka-server
+    ports:
+    - 8762:8762
